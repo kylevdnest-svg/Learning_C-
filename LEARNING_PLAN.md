@@ -40,6 +40,30 @@ Additional rules:
 - No arbitrary deadlines. Progress is based on demonstrated proficiency, not completed days.
 - Keep applications relevant: city-sim credits, invoices, inventories, desktop tools and API logic where appropriate.
 
+## 2A. Repetition, spaced recall & mixed practice (required)
+
+The student explicitly requested **frequent repetition** because remembering material can be difficult. Treat this as a learning-design requirement, not as a deficit or as evidence of inability.
+
+**Every module transition includes review:**
+1. **Finish the current module:** Give a short end-of-module independent explanation/trace and a small modification task.
+2. **Start the next module:** First do a 5–10 minute recall exercise on **one earlier module**, ideally without notes or execution until the prediction is made. Include at least one example that combines an old concept with the new concept where appropriate.
+3. **Rotate older topics:** Do not always revisit only the immediately previous module. Maintain a review queue and select a topic with a due review or a demonstrated weakness.
+4. **Spaced checkpoints:** Aim to revisit each newly learned concept at the next module transition, again after roughly **2–3 additional modules**, and once more about **a week or more later** when sessions allow. These are targets, not deadlines. Actual study sessions may be irregular.
+5. **If recall fails:** Explain just the missing piece, show a small example, and retest with a **different** example; schedule it again soon. Never treat forgetting as a personal failure.
+6. **Make recall meaningful:** Rotate read-and-explain, output prediction, spot-the-bug, and small code modification. Use a fresh snippet to distinguish understanding from recognition of a memorized answer.
+7. **Progress normally:** Do not block all new material due to one forgotten detail; however, revisit essential prerequisites before building on them.
+
+**Session format:** 5–10 min review of older material → 15–30 min new material → 5–10 min explain/modify → record observations. Shorter sessions are fine.
+
+**Assessment policy:** Review results are logged independently from the initial module grade. Mark use of hints honestly. A review can confirm retention, reveal a weak spot, or move a concept to **Review due**. Do not overwrite historical scores.
+
+**Review queue table** (update after each session; add rows when concepts are introduced/assessed):
+
+| Concept / module | Last independent evidence | Review target | Status | Next review exercise |
+|---|---|---|---|---|
+| M01 — assignments/arithmetic | Not yet assessed | After E001, then next module transition | Pending | Fresh credit/income trace and a value change |
+| M02 — if/else comparisons | Not yet assessed | After E001, then next module transition | Pending | Predict an affordability boundary case |
+
 ## 3. Evidence-based grading
 
 **No score is assigned for enthusiasm, prior exposure, successful tool installation, or merely copying a working example.**
@@ -125,7 +149,7 @@ Hints: 0 = none; 1 = small conceptual hint; 2 = targeted hint; 3 = guided walkth
 | Strongest observed skill | **Not yet measured** | Avoid speculative assessment |
 | Current focus | **Trace statement order and explain conditional branching** | See E001 |
 | Next action | **Student explains E001 without running it first** | Tutor then reviews and scores |
-| Delayed review queue | **Empty** | Populate after independent assessments |
+| Delayed review queue | **M01 and M02 pending first assessment** | Review after E001 and at each module transition |
 
 **Optional aggregate:** Once 3+ scored tasks exist, maintain a *rolling average of the most recent five independently completed tasks*. Never present it as a standardized or objective language-proficiency test.
 
@@ -194,9 +218,10 @@ When continuing C# learning:
 2. Check the current scoreboard, E001 or most recent pending task, recent log, and review queue.
 3. Ask the next targeted code-reading question; **do not restart Lesson 1 unnecessarily**.
 4. Gather the student's own answer before evaluating it. Do not mark code as mastered merely because it runs.
-5. Record the actual assessed result in the scoreboard, curriculum states, current exercise, and session log **and commit the update to GitHub** whenever an assessment is completed. If write access fails, provide the proposed update without claiming it was saved.
-6. When a file change is committed, include the relevant path/commit in the response. Preserve earlier assessment history.
-7. If the student asks for a different pace or style, update this agreement rather than silently changing course.
+5. **Always include a review of a previously studied module when progressing to a new module**, and rotate older concepts using the review queue; use fresh code, not the same question verbatim.
+6. Record the actual assessed result in the scoreboard, curriculum states, current exercise, and session log **and commit the update to GitHub** whenever an assessment is completed. If write access fails, provide the proposed update without claiming it was saved.
+7. When a file change is committed, include the relevant path/commit in the response. Preserve earlier assessment history.
+8. If the student asks for a different pace or style, update this agreement rather than silently changing course.
 
 ### Integrity rules
 - No guessed scores, dates, or student responses.
